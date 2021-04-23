@@ -29,21 +29,46 @@ and open the template in the editor.
                <h2>Kérem adja meg az adatait!</h2>
                 <form method="get" >
                     <fieldset>
-                        <div class="urlapelem"   >
-                            <label for="nev">Név</label>
-                            
-                            
-                            
-<input type="text" name="nev" id="nev" placeholder="Adja meg a nevét!" title="A név nagybetűvel kezdődik és legalább 3 karakter!" >
-                            
-                            
-                            
-                            
-                        </div> 
+                        <div class="urlapelem">
+                            <label for="nev">Név</label>                           
+                            <input type="text" name="nev" id="nev" placeholder="Adja meg a nevét!" title="A név nagybetűvel kezdődik és legalább 3 karakter!" >
+                            <br>
+                            <label id="email1Label" for="email">E-mail</label>
+                            <input type="email" name="email" id="email1" placeholder="valaki@vmi.hu">
+                            <br>
+                            <label for="email">E-mail újra</label>
+                            <input type="email" name="email" id="email2" placeholder="valaki@vmi.hu">
+                            <br>
+                            <label for="tel">Telefonszám</label>
+                            <input type="tel"  name="tel" id="tel" placeholder="+36-30-000-0000">
+                            <br>
+                        </div>
                     </fieldset>
-                    <input type="button" name="kuld" id="kuld" value="kuld">
-                       
-            </article>
+                    <fieldset>
+                        <div class="urlapelem">
+                            <label for="url">Weboldal</label>
+                            <input type="url" name="url" id="url" placeholder="http://valami.hu">
+                            <br>
+                            <div id="prioritas">
+                                <label for="select">Prioritás</label>
+                                <select>
+                                    <option>alacsony</option>
+                                    <option>közepes</option>
+                                    <option>magas</option>
+                                </select>
+                            </div>
+                            <br>
+                            <label for="uzenet">Üzenet</label>
+                            <textarea rows="4" cols="22" name="uzenet" id="uzenet"></textarea> 
+                        </div>
+                    </fieldset>
+                    <div id="gombok">
+                        <div id="kuldGomb"><input type="button" id="kuld" value="Küld"></div>                        
+                        <div id="torolGomb"><input type="button" id="torol" value="Töröl"></div>
+                    </div>
+                    
+
+                    </article>
             <aside>
                 <section>
                     <h3>
